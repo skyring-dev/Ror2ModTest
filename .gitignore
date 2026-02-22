@@ -97,3 +97,18 @@ InitTestScene*.unity*
 
 # Auto-generated scenes by play mode tests
 /[Aa]ssets/[Ii]nit[Tt]est[Ss]cene*.unity*
+#Ensures RoR2 assemblies are not redistributed accidentally
+<PROJECT_NAME>/[Pp]ackages/[Rr]isk of Rain 2/*.dll
+<PROJECT_NAME>/[Pp]ackages/[Rr]isk of Rain 2/[Pp]lugins/*.dll
+
+#Client side only thunderkit related files.
+<PROJECT_NAME>/Assets/ThunderKitSettings/EditorInspectorSettings.asset
+<PROJECT_NAME>/Assets/ThunderKitSettings/RoR2.asset
+<PROJECT_NAME>/Assets/ThunderKitSettings/Logs/*
+<PROJECT_NAME>/Assets/ThunderKitSettings/ThunderKit Extensions.asset
+<PROJECT_NAME>/ThunderKit/
+
+#Ensures mod dependencies such as R2API and others are not explicitly added to the github repository to avoid unecesary redistribution
+SS2-Project/Packages/*
+!SS2-Project/Packages/packages-lock.json
+!SS2-Project/Packages/manifest.json
